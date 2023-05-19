@@ -8,10 +8,47 @@
 </head>
 <body>
     <script>
+        //Normal declaration of a function
+        function welcome(name){
+            console.log(`Hello ${name}`)
+        }
+        //Function expression
+        let welcome1=function(name){
+            console.log(`Hello ${name}`)
+        }
+
+        welcome('Mahir');
+        welcome1('Mahir');
+
+        //Arrow function(ES6)
+        let welcome2=(name1,name2)=>{
+            console.log(`Hi ${name1} and ${name2}`)
+        }
+
+        welcome2('Rahim','Karim')
+        //If there is only one parameter
+        let welcome3= name =>
+        {
+            console.log(`Hi ${name}`)
+        }
+        welcome3('Habib')
+        //with return
+        let upperCaseName=name=>name.toUpperCase();
+
+        console.log(upperCaseName('Mahir'))
         
+        //More example of arrow function
+        function sum(a,b){
+            return a+b
+        }
+        let sumArrow=(n1,n2)=>n1+n2
+        console.log(sumArrow(1,2))
 
-
-
+        function isPositive(num){
+            return num>0
+        }
+        let isPositiveArrow=num=>num>0
+        console.log(isPositiveArrow(5))
 
 
 
