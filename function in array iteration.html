@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var food=['Cake','Pizza','Burgar']
+        var numbers=[1,2,3,4,5]
+
+        //foreach contains three parameters
+        /*
+        1.Parameter 1:vale
+        2.Parameter 2:index
+        3.Parameter 3:whole array
+        */
+        //normal declaration
+        food.forEach(function(item){
+            console.log(item)
+        })
+        //arrow funciton
+        food.forEach(item=>console.log(item))
+
+        let evenOddChecker=num=>{
+            if(num%2==0){
+                console.log(`${num} is even`)
+            }
+            else{
+                console.log(`${num} is odd`)
+            }
+        }
+        numbers.forEach(evenOddChecker)
+
+        //map to generate new array
+        let numberIncrement=number=>`${number+1} is the value after increment of ${number}`;
+        let incrementedArray=numbers.map(numberIncrement)
+        console.log(incrementedArray)
+    </script>
+</body>
+</html>
