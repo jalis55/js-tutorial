@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Get Child Elements</title>
+</head>
+<body>
+  <ul id="menu">
+    <li class="first">Home</li>
+    <li>Products</li>
+    <li class="current">Customer Support</li>
+    <li>Careers</li>
+    <li>Investors</li>
+    <li>News</li>
+    <li class="last">About Us</li>
+  </ul>
+  <script>
+    let child=document.querySelector('.first')
+    console.log(child)
+    // let parentnode=child.parentNode;
+    console.log(child.parentNode);
+    console.log(child.parentElement)
+    console.log(child);
+
+    let parent=document.querySelector('#menu')
+    console.log(parent.firstChild.nodeName);
+    console.log(parent.children);
+
+  </script>
+</body>
+</html>
