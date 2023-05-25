@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show hide</title>
+</head>
+<body>
+    <div class="content">
+        <input type="password" name="password" class="pswd">
+        <button class="btn">show</button>
+    </div>
+
+    <script>
+        let btn=document.querySelector('.btn');
+        btn.addEventListener('click',(e)=>{
+            let btnVal=e.target
+            if (btnVal.textContent=='show'){
+                console.log('invoked')
+                let inputType=btnVal.previousElementSibling;
+                inputType.setAttribute('type','text')
+                btnVal.textContent='hide'
+            }
+            else{
+                let inputType=btnVal.previousElementSibling;
+                inputType.setAttribute('type','password')
+                btnVal.textContent='show'
+            }
+        })
+    </script>
+</body>
+</html>
