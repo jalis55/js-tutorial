@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student={
+            name:"abbas",
+            age:22,
+            sex:"male"
+        }
+        console.log(student);
+        //converting to json 
+        let student_json=JSON.stringify(student)
+        console.log(student_json);
+        //converting to js object
+        let student_new=JSON.parse(student_json)
+        console.log(student_new);
+
+        /*
+        Data types for json
+        -string
+        -number
+        -object
+        -array
+        -boolean
+        -null
+
+        */
+    </script>
+</body>
+</html>
