@@ -18,6 +18,14 @@
         checkPhoneNumber('01841234566');
         checkPhoneNumber('+8801841234566');
         checkPhoneNumber('8801841234566')
+
+        //email validation
+        let email='jalis.tarif@leads-bd.com'
+        function emailCheck(emal){
+            re=/^([a-z\d\.-_]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z])?$/
+            console.log(re.test(email))
+        }
+        emailCheck(email)
         
     </script>
 </body>
