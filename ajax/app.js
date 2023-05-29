@@ -13,4 +13,5 @@ btn.addEventListener('click',()=>{
     xhr.send()
 
     console.log(xhr);
+    // console.log(xhr);
 });
